@@ -2,13 +2,14 @@ import React from 'react';
 import axios from 'axios';
 import Login from './Login';
 import Signup from './Signup';
-import Adventure from './Adventure';
+import Profile from './Profile';
+// import Upload from 'upload';
 import {
   BrowserRouter as Router,
   Route,
   Link
 }from 'react-router-dom';
-import ImageUploader from './ImageUploader'
+// import ImageUploader from './ImageUploader'
 
 class App extends React.Component {
   constructor(props) {
@@ -82,8 +83,8 @@ class App extends React.Component {
     if (user) {
       contents = (
         <>
-          <Adventure />
-          <ImageUploader/>
+          {/* <ImageUploader /> */}
+          <Profile user={user} />
         </>
       );
     } else {
