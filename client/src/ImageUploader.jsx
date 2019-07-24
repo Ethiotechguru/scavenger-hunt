@@ -1,7 +1,8 @@
-import React from "react";
+// import React from "react";
 import Dropzone from "react-dropzone";
 import axios from "axios";
 import { gql, graphql } from "react-apollo";
+import React, { Component } from 'react'
 
 // class Upload extends React.Component {
 //     state = {
@@ -57,7 +58,9 @@ import { gql, graphql } from "react-apollo";
 //         <button onClick={this.submit}>Submit</button>
 //         </div>
 //     );
-// import React, { Component } from 'react'
+//     }
+// }
+
 
 class ImageUploader extends Component {
   constructor(props) {
